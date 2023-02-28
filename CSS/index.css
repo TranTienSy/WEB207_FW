@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    min-height: 50px;
+}
+
+nav {
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* hover menu  */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.menu>li>a,
+.menu>li>a:visited,
+.menu>li>a:hover,
+.menu>li>a:active {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    /* color: #81b3d2; */
+}
+
+.menu>li>a:hover {
+    color: #d73444;
+}
+
+.menu>li>a.before:before,
+.menu>li>a.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.menu>li>a.after:after {
+    bottom: -0.25em;
+}
+
+.menu>li>a.before:before,
+.menu>li>a.after:after {
+    height: 5px;
+    height: 0.35rem;
+    width: 0;
+    background: #d73444;
+}
+
+.menu>li>a.third:after,
+.menu>li>a.sixth:before,
+.menu>li>a.sixth:after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.menu>li>a.before:hover:before,
+.menu>li>a.after:hover:after {
+    width: 100%;
+}
+
+
+/* end hover menu */
+
+.navheader {
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.panel {
+    min-height: 100px;
+    /* background-color: aquamarine; */
+}
+
+article {
+    min-height: 500px;
+    /* background-color: blueviolet; */
+}
+
+footer {
+    min-height: 300px;
+    background-color: black;
+}
+
+
+/* hover box khóa học */
+
+.khoaHoc>div>.card:hover {
+    margin-top: -10px;
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px orange;
+}

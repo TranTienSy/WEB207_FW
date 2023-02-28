@@ -1,0 +1,33 @@
+.box:hover {
+    margin-top: -6px;
+    transition: 0.5s;
+}
+
+.hocngay {
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+    transform: translate3d(-50%, 10px, 0);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.img-full:hover>.hocngay {
+    transform: translate3d(-50%, -50px, 0);
+    transition: 0.5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.img-full:hover {
+    width: 100%;
+    background-color: rgb(210, 210, 210);
+}
+
+.hinha {
+    opacity: 1;
+}
+
+.img-full:hover .hinha {
+    opacity: 0.7;
+}
