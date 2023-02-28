@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/dangnhap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Đăng Nhập</title>
+</head>
+
+<body class="p-0">
+    <div class="container-fluid">
+        <!-- menu -->
+
+        <div class="row mb-5">
+            <article class="col-10 m-auto">
+                <div class="row col-8 m-auto rounded-5" style="box-shadow: 5px 5px 5px 5px gray;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 20px;">
+                    <div class="col-12 col-lg-6 bg-white dangNhap mt-4 mb-5 p-5">
+                        <form action="" name="formDangNhap" class="was-validated">
+                            <h2 class="text-center fw-bold mb-4" style="text-shadow: 2px 2px 7px orange">ĐĂNG NHẬP</h2>
+                            <div class="text-center mb-3"><i class="bi bi-facebook h3" style="color: orange;"></i>
+                                <i class="fa-brands fa-google-plus h3 mx-2" style="color: orange;;"></i>
+                                <i class="fa-brands fa-square-instagram h3 accordion" style="color: orange;"></i>
+                            </div>
+                            <span class="text-center d-block text-secondary mb-2">sử dụng Email của bạn để đăng nhập hoặc đăng ký</span>
+                            <div class="input-group mb-3 ">
+                                <span class="input-group-text" style="border-radius: 50px 0px 0px 50px;"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" name="inputTaiKhoan" class="form-control" required placeholder="Tài khoản" style="border-radius: 0px 50px 50px 0px" ng-model="taiKhoan">
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập tài khoản !
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" style="border-radius: 50px 0px 0px 50px;"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Mật khẩu" required style="border-radius: 0px 50px 50px 0px" ng-model="matKhau">
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập mật khẩu !
+                                </div>
+                            </div>
+                            <a href="" class="text-center d-block text-secondary mb-4">Quên mật khẩu?</a>
+                            <button type="submit" class="btn  m-auto d-block w-50 fw-bold mb-2" style="border-radius: 20px; background-color: orange;" ng-click="dangNhap()">ĐĂNG NHẬP</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-6 px-5 py-5 position-relative rounded-5" style="background-image: linear-gradient(to right, #e68b41cc, #fc464e); ">
+                        <div class="my-5 py-5">
+                            <h2 class="text-center fw-bold text-white   mb-4 ">Xin chào</h2>
+                            <span class="text-center d-block text-white mb-4">Bạn chưa có tài khoản đăng ký ngay</span>
+                            <a href="#!dangky" class="btn fw-bold w-50 m-auto d-block border" style="border-radius: 20px; border: 2px white;">ĐĂNG KÝ</a>
+                        </div>
+                    </div>
+            </article>
+            </div>
+        </div>
+</body>
+
+</html>

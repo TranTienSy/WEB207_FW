@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/dangky.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Đăng ký</title>
+</head>
+
+<body class="p-0">
+    <div class="container-fluid">
+        <!-- menu -->
+        <div class="row mb-5">
+            <article class="col-12 m-auto">
+                <div class="row col-8 m-auto rounded-5" style="box-shadow: 5px 5px 5px 5px gray;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 20px;">
+                    <div class="col-12 col-lg-6 bg-white dangNhap mt-4 mb-5 p-5">
+                        <form action="" class="row was-validated" name="formDangKy">
+                            <h2 class="text-center fw-bold mb-4" style="text-shadow: 2px 2px 7px orange">ĐĂNG KÝ TÀI KHOẢN</h2>
+                            <div class="text-center mb-3"><i class="bi bi-facebook h3" style="color: orange;"></i>
+                                <i class="fa-brands fa-google-plus h3 mx-2" style="color: orange;;"></i>
+                                <i class="fa-brands fa-square-instagram h3 accordion" style="color: orange;"></i>
+                            </div>
+                            <span class="text-center d-block text-secondary mb-2">sử dụng Email của bạn để đăng nhập hoặc đăng ký</span>
+                            <div class="col-12 mt-4">
+                                <input type="text" required class="form-control rounded-5" placeholder="Họ và tên" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" ng-model="newuser.fullname">
+                                <div class="invalid-feedback">
+                                    Nhập họ và tên !
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <input type="date" class="form-control rounded-5" required placeholder="" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" ng-model="newuser.birthday">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio1" value="true" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" ng-model="newuser.gender">
+                                    <label class="form-check-label" for="inlineRadio1">Nam</label>
+                                </div>
+                                <div class="form-check form-check-inline ">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="false" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" ng-model="newuser.gender">
+                                    <label class="form-check-label" for="inlineRadio2">Nữ</label>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-12 mt-4">
+                                <input type="text" required class="form-control rounded-5" placeholder="Tài Khoản" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" ng-model="newuser.username">
+                                <div class="invalid-feedback">
+                                    Nhập tài khoản !
+                                </div>
+                            </div>
+                            <div class="input-group mt-4">
+                                <input type="email" required class="form-control" style="border-radius: 50px 50px 50px 50px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" placeholder="Email" ng-model="newuser.email">
+                                <div class="invalid-feedback">
+                                    Email không hợp lệ !
+                                </div>
+                            </div>
+
+                            <div class="col-6 mt-4">
+                                <input type="password" required class="form-control rounded-5" placeholder="Mật khẩu" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" ng-model="matKhau">
+                                <div class="invalid-feedback">
+                                    Nhập mật khẩu !
+                                </div>
+                            </div>
+                            <div class="col-6 mt-4 mb-5">
+                                <input type="password" required class="form-control rounded-5" placeholder="Xác nhận mật khẩu" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" ng-model="xnMatKhau">
+                                <div class="invalid-feedback">
+                                    Nhập xác nhận mật khẩu !
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn  m-auto d-block w-50 fw-bold mb-2" style="border-radius: 20px; background-color: orange;" ng-click="dangky()">ĐĂNG KÝ</button>
+                            <a href="" class="text-center d-block text-secondary mb-4">Quên mật khẩu?</a>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-6 px-5 py-5 position-relative rounded-5" style="background-image: linear-gradient(to right, #e68b41cc, #fc464e); ">
+                        <div class="my-5 py-5">
+                            <h2 class="text-center fw-bold text-white mt-5 mb-4 ">Xin chào</h2>
+                            <span class="text-center d-block text-white mb-4">Bạn chưa có tài khoản đăng ký ngay</span>
+                            <a href="#!dangnhap" type="button" class="btn fw-bold w-50 m-auto d-block border" style="border-radius: 20px; border: 2px white;">ĐĂNG NHẬP</a>
+                        </div>
+                    </div>
+            </article>
+            </div>
+        </div>
+</body>
+
+</html>
